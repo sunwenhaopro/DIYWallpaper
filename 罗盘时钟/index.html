@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>hahahhahaha</title>
+
+<link rel="stylesheet" href="css/clock.css">
+</head>
+<body>
+<ul class="clock" id="helang-clock">
+    <hr>
+</ul>
+<img id="background" style="height:100%;width:100%;"></body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/clock.js"></script>
+<script type="text/javascript">
+    $("#helang-clock").clock();
+</script>
+<script>
+    		var imgs =["23.jpg", "1.png", "2.jpg"];    //（设定想要显示的图片）
+var x = 0;       
+        function time1(){
+               x++;   
+               x=x%3;         //         超过2则取余数，保证循环在0、1、2之间
+               document.getElementById("background").src ="./image/"+imgs[x];
+        }setInterval("time1()",3000);
+</script>
+<span style="font-size:24px;"><style type="text/css">
+
+    body{     
+    
+        overflow-x: hidden;     
+    
+        overflow-y: hidden;     
+    
+    }     
+    
+    </style></span>
+
+</body>
+</html>
